@@ -124,9 +124,9 @@ module.exports = class ProductsController {
             )
 
             if (!product.matchedCount) {
-                res.status(404).json(`Nenhum filme encontrado com o ID ${id}`)
+                res.status(404).json(`No product found with ID ${id}`)
             } else if (!product.modifiedCount) {
-                res.status(404).json(`Filme encontrado com o ID ${id} não foi atualizado`)
+                res.status(404).json(`Product found with ID ${id} was not deleted`)
             }
 
             console.log(product)

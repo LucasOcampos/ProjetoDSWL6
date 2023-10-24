@@ -26,7 +26,6 @@ module.exports = class ProductsModels {
     static async insertOneProduct(data) {
         console.log("[Products Models] insertOneProduct")
 
-        console.log(`[insertOneProduct] ${data}`)
         try {
             const newProduct = {
                 nome: data.nome,
